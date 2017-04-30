@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+ width: 80%;
+ margin: 50px auto;
+}
+
+.cats{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cat{
+  width: calc(100%/3);
+}
+
+.catImg{
+  width: 100%;
+}
