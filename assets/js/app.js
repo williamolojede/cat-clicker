@@ -18,7 +18,7 @@ function Cat(name, score = 0){
 //Cat names
 const cats = [];
 
-const catNamesURL = './assets/js/cat-names.json';
+const catNamesURL = 'https://williamolojede.github.io/cat-clicker/assets/js/cat-names.json';
 $.getJSON(catNamesURL, (names) => {
   // creates list by filtering names for the first 10
   const catNames = names.filter((_name, i) => i < 10);
