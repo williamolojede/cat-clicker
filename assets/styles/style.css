@@ -1,20 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
 }
 
 .wrapper{
  width: 80%;
- margin: 50px auto;
+ margin: 0 auto;
+ height: 100vh;
+ position: relative;
 }
 
-.cats{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+
+.cat-wrapper{
   width: 100%;
   margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .cat{
@@ -23,4 +35,58 @@ body{
 
 .catImg{
   width: 100%;
+}
+
+.app-header{
+  text-align: center;
+}
+
+.app-header h1{
+  margin: 0;
+}
+
+main{
+  height: calc(100vh - 150px);
+}
+
+.app-footer p{
+  text-align: center;
+}
+
+.app-footer p, 
+.app-footer a{ 
+  color: #4c4c4c;
+}
+
+.catsNames{
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catName{
+  padding: 5px;
+  border: 1px solid #4c4c4c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease .5s;
+  margin: 5px;
+}
+.catName:hover{
+  background-color: rgba(76, 76, 76, .3);
+}
+
+@media (max-width: 460px) {
+  .cat {
+    width: 100%;
+  }
+
+  .catsNames{
+    flex-wrap: wrap;
+  }
 }

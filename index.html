@@ -2,32 +2,35 @@
 <html>
 <head>
   <title>Cat Clicker</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+</head>
 <body>
   <div class="wrapper">
-    <ul class="cats">
-      <li class="cat">
-        <div>
-          <header>
-            <h2 class="cat-name"></h2>
-          </header>
-          <img src="assets/img/cat1.jpg" class="catImg">
-          <div><h3>Number of Clicks: <span></span></h3></div>
-        </div>
-      </li>
-      <li class="cat">
-        <div>
-          <header>
-            <h2 class="cat-name"></h2>
-          </header>
-          <img src="assets/img/cat2.jpg" class="catImg">
-          <div><h3>Number of Clicks: <span></span></h3></div>
-        </div>
-      </li>
-    </ul>
+    <header class="app-header">
+      <h1>Cat Clicker App</h1>
+    </header>
+    
+    <main>
+      <div>
+        <h2>Click on your favorite cat.</h2>
+        <div class="catsName-list"></div>
+      </div>
+      <div class="cat-wrapper"></div>
+    </main>
+
+    <footer class="app-footer">
+      <p>Made with &hearts; by <a href="https://twitter.com/williamolojede" target="_blank">William I. Olojede</a></p>
+      <p><a href="https://github.com/williamolojede/cat-clicker" target="_blank">github</a></p>
+    </footer>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
