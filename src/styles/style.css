@@ -13,15 +13,25 @@ body{
   font-family: 'Lato', sans-serif;
   color: #4c4c4c;
 }
+main h2{
+  text-align: center;
+}
 
 .wrapper{
  width: 80%;
  margin: 0 auto;
  height: 100vh;
  position: relative;
+ padding-top: 50px;
 }
 
+.header-text{
+  text-decoration: underline;
+}
 
+.cats{
+  margin: 50px 0;
+}
 .cat-wrapper{
   width: 100%;
   margin: 0;
@@ -46,7 +56,7 @@ body{
 }
 
 main{
-  height: calc(100vh - 150px);
+  /*height: calc(100vh - 150px);*/
 }
 
 .app-footer p{
