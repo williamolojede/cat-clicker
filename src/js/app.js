@@ -131,14 +131,13 @@ const views = {
           e.preventDefault();
           const adminForm = helpers.selector('.admin__form')[0];
           const warningP = helpers.selector('.warning')[0];
-          
+          warningP.classList.remove('active');
 
           if( btn.textContent === 'Cancel'){
             // clears inputs and set admin mode to false
             helpers.clearFormField(adminForm);
             controller.offAdminMode();
           } else if(btn.textContent === 'Save') {
-            warningP.classList.remove('active');
             const newCatDetails = helpers.getValuesOfFormField(adminForm);
             // form validation
             if(helpers.formValidation(newCatDetails)){
