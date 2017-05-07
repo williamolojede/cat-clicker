@@ -69,6 +69,10 @@ main{
   color: #4c4c4c;
 }
 
+.app-footer a{
+  text-decoration: underline;
+}
+
 .catsNames{
   width: 70%;
   margin: 0 auto;
