@@ -106,6 +106,9 @@ main{
 .admin.active .admin__form{
   opacity: 1;
 }
+.admin.active .admin__btn{
+  display: none;
+}
 
 .admin__btn{
   border: 1px solid #4c4c4c;
