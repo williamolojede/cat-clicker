@@ -130,18 +130,25 @@ const views = {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
           const adminForm = helpers.selector('.admin__form')[0];
+          const warningP = helpers.selector('.warning')[0];
+          
+
           if( btn.textContent === 'Cancel'){
             // clears inputs and set admin mode to false
             helpers.clearFormField(adminForm);
             controller.offAdminMode();
           } else if(btn.textContent === 'Save') {
+            warningP.classList.remove('active');
             const newCatDetails = helpers.getValuesOfFormField(adminForm);
             // form validation
             if(helpers.formValidation(newCatDetails)){
               // pass data gotten from input field to the controller
               controller.addNewCat(newCatDetails);
             } else {
-              console.log('some or all of your input is invalid, please try again');
+              // activate warining message
+              if (!warningP.classList.contains('active')) {
+                warningP.classList.add('active');
+              }
             }
             // clears input field
             helpers.clearFormField(adminForm);

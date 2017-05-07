@@ -116,6 +116,7 @@ main{
 }
 .admin__form{
   opacity: 0;
+  text-align: center;
 }
 
 .admin.active .admin__form{
@@ -130,6 +131,17 @@ main{
 }
 .admin__input {
   padding: 5px;
+}
+
+/*Warning Style*/
+.warning{
+  color: #E53A40;
+  opacity: 0;
+  transition: ease-in .5s;
+}
+
+.warning.active{
+  opacity: 1;
 }
 @media (max-width: 460px) {
   .cat {
