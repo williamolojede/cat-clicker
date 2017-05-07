@@ -35,8 +35,8 @@ main h2{
 .cat-wrapper{
   width: 100%;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
 }
 
 .cat{
@@ -91,6 +91,29 @@ main{
   background-color: rgba(76, 76, 76, .3);
 }
 
+.admin{
+  display: flex;
+}
+
+.admin__label{
+  display: block;
+  padding: 5px;
+}
+.admin__form{
+  opacity: 0;
+}
+
+.admin.active .admin__form{
+  opacity: 1;
+}
+
+.admin__btn{
+  border: 1px solid #4c4c4c;
+  padding: 5px;
+  border-radius: 3px;
+  height: 30px;
+  margin-right: 50px;
+}
 @media (max-width: 460px) {
   .cat {
     width: 100%;

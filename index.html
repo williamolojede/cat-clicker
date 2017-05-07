@@ -21,7 +21,20 @@
         <h2 class="cats-text">Choose a cat.</h2>
         <div class="catsName-list"></div>
       </div>
-      <div class="cat-wrapper"></div>
+      <div class="cat-admin">
+        <div class="cat-wrapper"></div>
+        <div class="admin">
+          <a class="admin__btn">Admin</a>
+          <form class="admin__form">
+            <label class="admin__label">Name: <input type="text" class="admin__input" required></label>
+            <label class="admin__label">Url: <input type="url" pattern="https?://.+" class="admin__input" required></label>
+            <div class="admin-form__btnWrapper">
+              <button class="admin-form__btn">Cancel</button>
+              <button class="admin-form__btn">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="app-footer">
