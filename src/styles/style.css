@@ -40,7 +40,8 @@ main h2{
 }
 
 .cat{
-  width: calc(100%/3);
+  width: calc(100%/2);
+  margin: 0 auto;
 }
 
 .catImg{
@@ -78,26 +79,36 @@ main{
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.catName{
+.catName,
+.admin-form__btn,
+.admin__btn{
   padding: 5px;
   border: 1px solid #4c4c4c;
-  border-radius: 5px;
   cursor: pointer;
-  transition: all ease .5s;
+  border-radius: 5px;
   margin: 5px;
+  background-color: #fff;
+  transition: all ease .5s;
 }
-.catName:hover{
+.admin-form__btn,
+.admin__input{
+  outline: none;
+}
+.catName:hover,
+.admin-form__btn:hover,
+.admin__btn:hover{
   background-color: rgba(76, 76, 76, .3);
 }
 
 .admin{
   display: flex;
+  justify-content: center;
 }
 
 .admin__label{
   display: block;
   padding: 5px;
+  font-size: 18px;
 }
 .admin__form{
   opacity: 0;
@@ -111,11 +122,10 @@ main{
 }
 
 .admin__btn{
-  border: 1px solid #4c4c4c;
-  padding: 5px;
-  border-radius: 3px;
   height: 30px;
-  margin-right: 50px;
+}
+.admin__input {
+  padding: 5px;
 }
 @media (max-width: 460px) {
   .cat {
